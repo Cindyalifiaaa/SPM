@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#bungkus{
+	display: flex;
+}
+.sidebar{
+	width: 300px;
+	background: orange;
+	position: fixed;
+	top: 0;
+	height: 100%;
+}
+.konten{
+	margin-left: 300px;
+	width: 100%;
+	padding: 20px;
+	margin-top: 40px;
+	overflow: auto;
+	white-space: nowrap;
+}
+table{
+	border-collapse: collapse;
+	text-align: center;
+}
+th,td{
+	padding: 5px
+}
+a{
+	text-decoration: none;
+
+}
+.edit-bulin label{
+	width: 100px;
+}
+.edit-bulin .form-control{
+	width: 400px;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+nav{
+	margin-left: 300px;
+	width: 100%;
+	background: coral;
+	position: fixed;
+	padding: 0;
+}
+.navbar-nav .nav-item{
+	display: inline;
+	list-style: none;
+	padding: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+}
+.navbar-nav .nav-item a{
+	padding: 12px;
+}
+.navbar-nav .nav-item:hover{
+	box-shadow: 0px 4px 0px -1px pink;
+}
+.navbar-nav .nav-item.active{
+	box-shadow: 0px 4px 0px -1px pink;
+
+}
