@@ -1,5 +1,9 @@
 <?php
 require_once('koneksi.php');
+require_once('cek-login.php');
+if ($sessionStatus==false) {
+	header("Location: login.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -257,7 +261,7 @@ require_once('koneksi.php');
 							// push data nilai array persen
 							array_push($array_persen, $persen_target);
 							
-							// push data nilai array persen
+							// push data nilai array capaian
 							array_push($array_capaian, $nilai_capaian);
 
 							?>

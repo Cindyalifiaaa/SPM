@@ -1,5 +1,9 @@
 <?php
 require_once('koneksi.php');
+require_once('cek-login.php');
+if ($sessionStatus==false) {
+	header("Location: login.php");
+}
 $halaman = "ht";
 ?>
 <!DOCTYPE html>

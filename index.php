@@ -1,6 +1,10 @@
 <?php
 require_once('koneksi.php');
 $halaman = "bulin";
+require_once('cek-login.php');
+if ($sessionStatus==false) {
+	header("Location: login.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
