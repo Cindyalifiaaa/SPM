@@ -184,13 +184,13 @@ $halaman = "bbl";
 				$jml_asembagus4 = 0;
 				$jml_gudang4 = 0;		
 				$jml_wringin4 = 0;			
-				$jml_trigonco4 =	0;			
+				$jml_trigonco4 = 0;			
 				$jml_perante4 = 0;			
 				$jml_awar4 = 0;
-				$jml_kedunglo4 =	0;			
+				$jml_kedunglo4 = 0;			
 				$jml_bantal4 = 0;		
 				$jml_kertosari4 = 0;
-				$jml_mojosari4 =	0;			
+				$jml_mojosari4 = 0;			
 				$jml_pkm_induk4 = 0;
 				$jml_luar_wilayah4 = 0;
 			}else{

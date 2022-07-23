@@ -50,27 +50,4 @@ if ($opsi == "input") {
 		header("Location: daftar.php");
 	}
 }
-
-// jika belum login, akan di lempar ke form login 
-if ($sessionStatus==false) {
-	header("Location: login.php");
-}
-if ($opsi="update") {
-	// if (isset($_GET['id_akun'])) {
-	// 	$id_akun=$_GET['id_akun'];
-	// }
-	// else{
-	// 	echo "error id <a href='../daftar.php'>Kembali</a>"; //status error
-	// }
-
-	// $query = "DELETE FROM akun WHERE id = $id_akun";
-	// $delete = mysqli_query($db,$query);
-
-	// if ($delete == false) {
-	// 	echo "Error Dalam Eksekusi Query. <a href='../akun.php'>Kembali</a>";
-	// }else{
-	// 	header("Location: ../akun.php");
-	// }
-
-}
 ?>

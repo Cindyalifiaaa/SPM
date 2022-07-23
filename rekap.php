@@ -1,6 +1,7 @@
 <?php
 require_once('koneksi.php');
 require_once('cek-login.php');
+
 if ($sessionStatus==false) {
 	header("Location: login.php");
 }
@@ -95,7 +96,6 @@ if ($sessionStatus==false) {
 
 				<?php
 				
-
 				for ($i=1; $i < 13; $i++) { 
 
 					switch ($i) {
@@ -242,8 +242,6 @@ if ($sessionStatus==false) {
 							}
 
 							$persen_target = ($total/$s_tahun)*100;
-
-
 
 							if ($target >= $persen_target) {
 								$ket_sasaran = "Tidak Tercapai";

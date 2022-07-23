@@ -14,6 +14,7 @@ if (isset($_POST['password'])) {
 else{
 	echo "error password";
 }
+// end validasi
 
 // hasing password
 $password=hash("sha256", $password);
@@ -27,10 +28,11 @@ $result=mysqli_query($db,$query);
 // karena pemanggilan data hanya satu, maka menggunakan syntax di bawah ini. (intinya tidak menggunkan perulangan foreach)
 $data=mysqli_fetch_assoc($result);
 
+// deteksi data jika isinya tidak ada
 if (is_null($data)) {
 	echo "Data akun tidak ditemukan<a href='login.php'>Kembali</a>";
 	exit();
-}
+} //cek password yang dimasukkan sama dengan yang ada di database, jika tidak diarahkan kembali ke login
 else if( $data['password'] != $password){
 	echo "password salah <a href='login.php'>Kemblai</a>";
 	exit();
